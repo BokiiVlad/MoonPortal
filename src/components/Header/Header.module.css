@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+}
+.svg {
+  margin-top: 7px;
+  stroke: #d3d6e6;
+  fill: #d3d6e6;
+}
+.list {
+  display: flex;
+  gap: 8px;
+}
+.svgBox {
+  display: flex;
+  gap: 8px;
+}
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 52px 30px 30px 32px;
+  line-height: 187%;
+}

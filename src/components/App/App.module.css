@@ -1,0 +1,19 @@
+.container {
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  .headerBox {
+    padding: 40px 60px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .headerBox {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    font-size: 20px;
+  }
+}

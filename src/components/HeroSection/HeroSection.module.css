@@ -1,0 +1,10 @@
+.heroBox {
+  background-image: url(../../../public/pictures/MoonOptimized.png);
+  background-repeat: no-repeat;
+  background-position: center 88px;
+  background-position: center;
+}
+.title {
+  padding-top: 600px;
+  margin-bottom: 32px;
+}

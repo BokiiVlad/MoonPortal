@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Newsreader", "Poiret One", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d9d9d9;
+  background-color: #141e20;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Reset anchor styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset buttons and inputs */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Cursor for buttons */
+button {
+  cursor: pointer;
+  color: #235691;
+}
+button:hover {
+  color: #4e90dc;
+}
+button:active {
+  color: #0f56a8;
+}
+/* Images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
