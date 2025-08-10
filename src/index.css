@@ -22,8 +22,12 @@ h5 {
 }
 
 /* Remove list styles */
-ul,
 ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -50,17 +54,10 @@ textarea {
 /* Cursor for buttons */
 button {
   cursor: pointer;
-  color: #235691;
 }
-button:hover {
-  color: #4e90dc;
-}
-button:active {
-  color: #0f56a8;
-}
+
 /* Images responsive by default */
 img {
-  max-width: 100%;
   height: auto;
   display: block;
 }

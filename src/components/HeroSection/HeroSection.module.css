@@ -1,10 +1,76 @@
 .heroBox {
-  background-image: url(../../../public/pictures/MoonOptimized.png);
-  background-repeat: no-repeat;
-  background-position: center 88px;
-  background-position: center;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
 }
 .title {
-  padding-top: 600px;
   margin-bottom: 32px;
+}
+.text {
+  margin-bottom: 32px;
+}
+
+.moon {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 331px;
+  height: 331px;
+}
+.cloudTop {
+  position: absolute;
+  left: calc(50% - 690px);
+  top: 60px;
+  transform: rotate(146deg);
+  width: 1007px;
+  height: 671px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.cloudBottom {
+  position: absolute;
+  left: calc(50% - 275px);
+  top: 128px;
+  transform: rotate(-24deg);
+  width: 1007px;
+  height: 671px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.moonLight {
+  position: absolute;
+  top: 113px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  height: 560px;
+}
+.svg {
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.stars {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 768px;
+  height: 768px;
+  z-index: 6;
+  display: block;
+}
+.moonWrapper {
+  position: relative;
+  height: 559px;
+  width: 331px;
+  margin: auto;
 }

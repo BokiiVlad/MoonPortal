@@ -1,0 +1,49 @@
+.box {
+  padding-top: 75px;
+  line-height: 222%;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  color: #d9d9d9;
+  width: 382px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  color: #d9d9d9;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: auto;
+  margin-right: auto;
+  width: 382px;
+}
+.img {
+  position: relative;
+  margin-bottom: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+}
+.stars {
+  position: absolute;
+  left: 50%;
+  top: -24px;
+  transform: translateX(-50%);
+  width: 768px;
+  height: 768px;
+  z-index: 2;
+}
+
+.cloudBottom {
+  position: absolute;
+  top: 34px;
+  left: calc(50% + 280px);
+  transform: translateX(-50%) rotate(-32deg);
+  width: 1201px;
+  height: 801px;
+  object-fit: contain;
+  z-index: 9;
+}
