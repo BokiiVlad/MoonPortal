@@ -1,0 +1,59 @@
+.box {
+  position: relative;
+  padding: 310px 30px 362px 30px;
+  overflow: hidden;
+}
+
+.title {
+  margin: auto;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 390px;
+}
+
+.text {
+  margin: auto;
+  line-height: 187%;
+  text-align: center;
+  width: 331px;
+  margin-bottom: 24px;
+}
+
+.but {
+  text-align: center;
+}
+
+.img {
+  position: absolute;
+  left: 50%;
+  top: 128px;
+  transform: translateX(-50%);
+  width: 768px;
+  height: 768px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.cloudTop {
+  position: absolute;
+  left: calc(50% - 600px);
+  top: -10px;
+  transform: rotate(156deg);
+  width: 775px;
+  height: 516px;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+}
+.cloudBottom {
+  position: absolute;
+  left: calc(50% - 155px);
+  top: 325px;
+  transform: rotate(-34deg);
+  width: 739px;
+  height: 493px;
+  object-fit: cover;
+  z-index: 1;
+}

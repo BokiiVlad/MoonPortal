@@ -3,6 +3,7 @@ import AboutSecond from "../../components/AboutSecond/AboutSecond.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import HeroSection from "../../components/HeroSection/HeroSection.jsx";
+import ReadyBegin from "../../components/ReadyBegin/ReadyBegin.jsx";
 import Services from "../../components/Services/Services.jsx";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutFirst />
       <AboutSecond />
       <Services />
+      <ReadyBegin />
       <Contact />
       <Footer />
     </>

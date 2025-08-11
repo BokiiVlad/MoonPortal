@@ -63,6 +63,17 @@ const Contact = () => {
           </Form>
         )}
       </Formik>
+      <h3 class={style.titleAddress}>Additional Contact Methods</h3>
+
+      <div class={style.addres}>
+        <p class={style.titleAddress}>
+          Email:{" "}
+          <a href="mailto:contact@moonportal.com">contact@moonportal.com</a>
+        </p>
+        <p class={style.titleAddress}>
+          Phone: <a href="tel:+15551234567">(555) 123-4567</a>
+        </p>
+      </div>
     </section>
   );
 };

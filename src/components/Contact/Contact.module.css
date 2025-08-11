@@ -9,7 +9,7 @@
   width: 390px;
 }
 .box {
-  padding: 323px 30px 0 30px;
+  padding: 0 30px 0 30px;
 }
 .form {
   display: flex;
@@ -42,5 +42,15 @@
   height: 44px;
   background: #235691;
   color: #d9d9d9;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
+}
+.titleAddress {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #d9d9d9;
+}
+.addres {
+  width: 274px;
+  margin-bottom: 80px;
 }
