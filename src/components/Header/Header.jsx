@@ -3,7 +3,7 @@ import style from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header className={style.headerBox}>
+    <section className={style.headerBox}>
       <div className={style.svgBox}>
         <svg className={style.svg} width="16" height="16">
           <use href="/public/sprite/sprite.svg#icon-Logo-Vector"></use>
@@ -23,7 +23,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </section>
   );
 };
 

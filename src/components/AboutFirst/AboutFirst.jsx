@@ -2,7 +2,7 @@ import style from "./AboutFirst.module.css";
 
 const AboutFirst = () => {
   return (
-    <div className={style.aboutBox}>
+    <section className={style.aboutBox}>
       <img className={style.stars} src="/pictures/Stars.png" />
       <h2 className={style.title}>What is MoonPortal?</h2>
       <p className={style.firstText}>
@@ -16,7 +16,7 @@ const AboutFirst = () => {
         cosmic cycles.
       </p>
       <img className={style.img} src="/pictures/Quinn.png" />
-    </div>
+    </section>
   );
 };
 
