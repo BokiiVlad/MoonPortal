@@ -4,7 +4,7 @@ import style from "./Contact.module.css";
 const Contact = () => {
   return (
     <section className={style.box}>
-      <h2 className={style.title}>Contact Us</h2>
+      {/* <h2 className={style.title}>Contact Us</h2>
       <p className={style.text}>
         We'd love to hear from you! Whether you have questions, feedback, or
         just want to share your thoughts, please fill out the form below.
@@ -73,7 +73,7 @@ const Contact = () => {
         <p class={style.titleAddress}>
           Phone: <a href="tel:+15551234567">(555) 123-4567</a>
         </p>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -5,6 +5,28 @@
 }
 .list {
   display: flex;
+  gap: 7px;
+}
+.svgBox {
+  display: flex;
+  gap: 8px;
+}
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 41px 27px 21px 27px;
+  line-height: 187%;
+}
+
+/* 
+.svg {
+  margin-top: 7px;
+  stroke: #d3d6e6;
+  fill: #d3d6e6;
+}
+.list {
+  display: flex;
   gap: 32px;
 }
 .svgBox {
@@ -14,6 +36,7 @@
 .headerBox {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
   padding: 52px 30px 30px 32px;
   line-height: 187%;
-}
+} */

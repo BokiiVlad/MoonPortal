@@ -63,7 +63,7 @@ const Services = () => {
         </li>
       </ul>
       <Button className={style.but} children={"Book Now"} />
-      <img className={style.moon} src="/pictures/MoonStages.png" />
+      {/* <img className={style.moon} src="/pictures/MoonStages.png" /> */}
     </>
   );
 };

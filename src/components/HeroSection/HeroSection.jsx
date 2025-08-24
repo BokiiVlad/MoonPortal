@@ -11,7 +11,7 @@ const HeroSection = () => {
       <Header />
       <div className={style.moonWrapper}>
         <img className={style.moon} src="/pictures/MoonOptimized.png" />
-        <svg
+        {/* <svg
           className={style.svg}
           width="605"
           height="556"
@@ -36,7 +36,7 @@ const HeroSection = () => {
               <stop offset="1" stopColor="white" stopOpacity="0" />
             </radialGradient>
           </defs>
-        </svg>
+        </svg> */}
       </div>
       <h1 className={style.title}>Embrace the Lunar Rhythm</h1>
       <p className={style.text}>

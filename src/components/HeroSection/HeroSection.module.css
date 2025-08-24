@@ -13,12 +13,10 @@
 
 .moon {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 26px;
+  left: 48%;
   transform: translateX(-50%);
   z-index: 2;
-  width: 331px;
-  height: 331px;
 }
 .cloudTop {
   position: absolute;
@@ -42,14 +40,14 @@
   z-index: 1;
 }
 
-.moonLight {
+/* .moonLight {
   position: absolute;
-  top: 113px;
+  top: 26px;
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
   height: 560px;
-}
+} */
 .svg {
   overflow: hidden;
   text-align: center;
@@ -70,7 +68,7 @@
 }
 .moonWrapper {
   position: relative;
+  margin: 0 auto;
   height: 559px;
   width: 331px;
-  margin: auto;
 }
