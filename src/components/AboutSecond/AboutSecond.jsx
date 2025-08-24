@@ -3,19 +3,24 @@ import style from "./AboutSecond.module.css";
 const AboutSecond = () => {
   return (
     <section className={style.box}>
-      <img className={style.stars} src="/pictures/Stars.png" />
-      <img className={style.cloudBottom} src="/pictures/Cloud.png" />
+      <h2 className={style.title}>You are the Portal</h2>
+      <p className={style.text}>
+        You are life experiencing itself as an author of the co-creative dance
+        with the universe, and when you change your energy, everything around
+        you changes too.
+      </p>
       <p className={style.text}>Each experience is designed to help you:</p>
       <ol className={style.list}>
-        <li>awaken your unique intelligence;</li>
-        <li>nurture your personal growth;</li>
-        <li>access the wisdom that resides within you.</li>
+        <li>Awaken your unique intelligence;</li>
+        <li>Harness the organic flow of energy in your body;</li>
+        <li>Nurture your personal growth;</li>
+        <li>Access the wisdom that resides within you;</li>
+        <li>Feel free and inspired;</li>
       </ol>
       <p className={style.text}>
-        All in harmony with the moon’s energetic signature and significant
+        All in harmony with the moon's energetic signature and significant
         celestial transits.
       </p>
-      <img className={style.img} src="/pictures/BookOptimized.png" />
     </section>
   );
 };

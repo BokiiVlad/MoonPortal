@@ -6,17 +6,33 @@
 }
 .title {
   margin-bottom: 32px;
+  width: 333px;
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1;
 }
+
 .text {
+  width: 333px;
+  position: relative;
+  z-index: 20;
+  margin: auto;
   margin-bottom: 32px;
+  line-height: 187%;
+  text-align: center;
 }
 
 .moon {
   position: absolute;
-  top: 26px;
-  left: 48%;
+  max-width: 100%;
+  left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 7;
 }
 .cloudTop {
   position: absolute;
@@ -40,14 +56,6 @@
   z-index: 1;
 }
 
-/* .moonLight {
-  position: absolute;
-  top: 26px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 450px;
-  height: 560px;
-} */
 .svg {
   overflow: hidden;
   text-align: center;
@@ -59,7 +67,7 @@
 .stars {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 120px;
   transform: translateX(-50%);
   width: 768px;
   height: 768px;
@@ -69,6 +77,12 @@
 .moonWrapper {
   position: relative;
   margin: 0 auto;
-  height: 559px;
-  width: 331px;
+  height: 290px;
+  width: 290px;
+  margin-bottom: 73px;
+  margin-top: 26px;
+}
+.but {
+  position: relative;
+  z-index: 20;
 }

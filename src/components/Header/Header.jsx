@@ -8,7 +8,7 @@ const Header = () => {
         <svg className={style.svg} width="16" height="16">
           <use href="/sprite/sprite.svg#icon-Logo-Vector"></use>
         </svg>
-        <p>MoonPortal</p>
+        <p className={style.title}>MoonPortal</p>
       </div>
       <nav>
         <ul className={style.list}>
