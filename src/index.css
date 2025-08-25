@@ -37,7 +37,7 @@ ul {
 /* Reset anchor styles */
 a {
   color: inherit;
-  text-decoration: none;
+  list-style: none;
 }
 
 /* Reset buttons and inputs */

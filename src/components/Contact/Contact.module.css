@@ -6,7 +6,7 @@
 .text {
   line-height: 187%;
   margin-bottom: 20px;
-  width: 390px;
+  width: 300px;
 }
 .box {
   padding: 0 30px 0 30px;
@@ -19,16 +19,17 @@
 .textInput {
   border-radius: 8px;
   padding: 16px;
-  width: 390px;
+  width: 300px;
   height: 56px;
   background: #293038;
 }
 .textArea {
   border-radius: 8px;
   padding: 16px;
-  width: 390px;
+  width: 300px;
   height: 144px;
   background: #293038;
+  resize: none;
 }
 .formGroup {
   display: flex;
@@ -43,14 +44,13 @@
   background: #235691;
   color: #d9d9d9;
   margin-bottom: 48px;
+  margin: auto;
 }
 .titleAddress {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 187%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 200%;
   color: #d9d9d9;
-}
-.addres {
-  width: 274px;
-  margin-bottom: 80px;
+  margin-top: 14px;
+  margin-bottom: 77px;
 }

@@ -10,17 +10,17 @@ const Services = () => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="24" height="24">
+              <svg className={style.svg} width="20" height="20">
                 <use href="/sprite/sprite.svg#icon-Moon-Icon"></use>
               </svg>
             </li>
             <li>
-              <p className={style.mainText}>Moon Ceremonies</p>
+              <p className={style.mainText}>Full/New Moon Ceremony</p>
             </li>
             <li>
               <p className={style.text}>
-                Experience the power of group rituals aligned with the new and
-                full moons.
+                Harness lunar energy to release, set intentions, and invite
+                transformation
               </p>
             </li>
           </ul>
@@ -28,17 +28,17 @@ const Services = () => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="24" height="24">
+              <svg className={style.svg} width="20" height="20">
                 <use href="/sprite/sprite.svg#icon-Star-Icon"></use>
               </svg>
             </li>
             <li>
-              <p className={style.mainText}>Lunar Workshops</p>
+              <p className={style.mainText}>Chakra Portal Workshop</p>
             </li>
             <li>
               <p className={style.text}>
-                Deepen your understanding of lunar cycles and their impact on
-                your life.
+                Connect to the portals in your body to restore balance and
+                master your energy
               </p>
             </li>
           </ul>
@@ -46,24 +46,24 @@ const Services = () => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="24" height="24">
+              <svg className={style.svg} width="20" height="20">
                 <use href="/sprite/sprite.svg#icon-Sun-Icon"></use>
               </svg>
             </li>
             <li>
-              <p className={style.mainText}>Moon Ceremonies</p>
+              <p className={style.mainText}>Birth Chart Reading</p>
             </li>
             <li>
               <p className={style.text}>
-                Experience the power of group rituals aligned with the new and
-                full moons.
+                Book a reading to receive life guidance from the stars through
+                your unique astrological birth chart
               </p>
             </li>
           </ul>
         </li>
       </ul>
       <Button className={style.but} children={"Book Now"} />
-      {/* <img className={style.moon} src="/pictures/MoonStages.png" /> */}
+      <img className={style.moon} src="/pictures/MoonStages.png" />
     </>
   );
 };

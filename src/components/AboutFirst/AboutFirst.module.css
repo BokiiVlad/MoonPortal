@@ -12,16 +12,15 @@
   margin-bottom: 24px;
 }
 .img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 326px;
-  height: 450px;
-  margin-bottom: 41px;
+  width: 360px;
+  height: 499px;
+  margin: auto;
 }
 
 .aboutBox {
   position: relative;
   margin: auto;
-  width: 390px;
+  width: 360px;
   overflow: hidden;
+  margin-bottom: 41px;
 }
