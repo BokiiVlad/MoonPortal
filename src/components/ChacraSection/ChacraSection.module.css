@@ -1,0 +1,83 @@
+.img {
+  position: relative;
+  width: 283px;
+  height: 283px;
+  margin: auto;
+  z-index: 20;
+  margin-bottom: 13px;
+}
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.firstText {
+  line-height: 187%;
+  margin-bottom: 18px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.secondText {
+  line-height: 187%;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stars {
+  position: absolute;
+  top: 300px;
+}
+.section {
+  position: relative;
+}
+.formBox {
+  width: 298px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chakraText {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  color: rgba(130, 169, 219, 0.83);
+  margin-bottom: 25px;
+}
+.underChakraText {
+  line-height: 187%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.formBox {
+  flex-direction: column;
+  gap: 40px;
+}
+.input {
+  position: relative;
+  border-radius: 8px;
+  padding: 16px;
+  width: 298px;
+  height: 56px;
+  background: #293038;
+  z-index: 20;
+}
+.labelBox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.section {
+  overflow: hidden;
+}
