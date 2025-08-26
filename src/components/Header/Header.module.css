@@ -1,9 +1,9 @@
 .svg {
-  margin-top: 7px;
   stroke: #d3d6e6;
   fill: #d3d6e6;
   position: relative;
   z-index: 20;
+  margin-bottom: 3px;
 }
 .list {
   display: flex;
@@ -12,10 +12,13 @@
 .svgBox {
   display: flex;
   gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 .headerBox {
   display: flex;
   justify-content: space-between;
+
   margin-top: 60px;
   padding: 41px 27px 21px 27px;
   line-height: 187%;
