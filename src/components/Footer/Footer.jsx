@@ -30,38 +30,16 @@ const Footer = () => {
           </Link>
         </li>
       </ul>
-      <ul className={style.socialLink}>
-        <li>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <svg className={style.svg} width="24" height="24">
-              <use href="/sprite/sprite.svg#icon-Facebook-Icon"></use>
-            </svg>
-          </a>
-        </li>
 
-        <li>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-            <svg className={style.svg} width="24" height="24">
-              <use href="/sprite/sprite.svg#icon-Twitter"></use>
-            </svg>
-          </a>
-        </li>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <svg className={style.svg} width="24" height="24">
+          <use href="/sprite/sprite.svg#icon-IG-Icon"></use>
+        </svg>
+      </a>
 
-        <li>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <svg className={style.svg} width="24" height="24">
-              <use href="/sprite/sprite.svg#icon-IG-Icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
       <p className={style.brend}>© 2025 MoonPortal. All rights reserved.</p>
       <p className={style.siteDevelopers}>
-        Designed &amp; Developed by <br />
+        Designed &amp; Developed by
         <a
           href="https://www.linkedin.com/in/olena-bakonina-888149145/"
           className={style.name}

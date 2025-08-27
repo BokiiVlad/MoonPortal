@@ -1,4 +1,4 @@
-.title {
+.titleFirst {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 40px;
@@ -11,16 +11,66 @@
   margin: auto;
   margin-bottom: 24px;
 }
-.img {
+.firstImg {
   width: 360px;
   height: 499px;
   margin: auto;
 }
 
 .aboutBox {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: auto;
   width: 360px;
   overflow: hidden;
   margin-bottom: 41px;
+}
+.section {
+  line-height: 222%;
+  text-align: center;
+  position: relative;
+  width: 360px;
+  margin: auto;
+}
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.list {
+  margin-bottom: 32px;
+  text-align: left;
+  list-style: none;
+}
+.img {
+  position: relative;
+  margin-bottom: 225px;
+  z-index: 3;
+}
+
+.list li::before {
+  content: "• ";
+  color: #d9d9d9;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.firstText {
+  margin-bottom: 32px;
+  text-align: left;
+}
+.img {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 60px;
+  margin-bottom: 23px;
+}
+.textBox {
+  width: 300px;
+  margin: auto;
+}
+.secondText {
+  text-align: left;
 }

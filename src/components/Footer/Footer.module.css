@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   width: 312px;
   height: 84px;
-  margin-bottom: 24px;
 }
 .item {
   font-size: 20px;
@@ -40,6 +39,7 @@
 }
 .siteDevelopers {
   text-align: center;
+  width: 261px;
 }
 .name {
   text-decoration: underline;
@@ -47,4 +47,36 @@
 }
 .name:hover {
   color: #9cabba;
+}
+@media (min-width: 1440px) {
+  .list {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 146px;
+  }
+  .item {
+  }
+  .item:hover {
+  }
+  .socialLink {
+    display: flex;
+    gap: 16px;
+    width: 104px;
+  }
+  .footerBox {
+    margin-bottom: 38px;
+  }
+  .svg {
+    fill: #fff;
+  }
+  .brend {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    text-align: center;
+  }
+  .siteDevelopers {
+    width: auto;
+  }
 }
