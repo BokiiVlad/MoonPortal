@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer.jsx";
 import HeroSection from "../../components/HeroSection/HeroSection.jsx";
 import ReadyBegin from "../../components/ReadyBegin/ReadyBegin.jsx";
 import Services from "../../components/Services/Services.jsx";
+import Testimonials from "../../components/Testimonials/Testimonials.jsx";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutFirst />
       <Services />
       <ChacraSection />
+      <Testimonials />
       <ReadyBegin />
       <Contact />
       <Footer />
