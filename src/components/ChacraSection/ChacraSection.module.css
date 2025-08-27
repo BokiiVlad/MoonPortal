@@ -1,10 +1,13 @@
-.img {
+.chakra {
   position: relative;
   width: 283px;
   height: 283px;
   margin: auto;
   z-index: 20;
   margin-bottom: 13px;
+}
+.cloud {
+  display: none;
 }
 .title {
   font-weight: 700;
@@ -29,11 +32,11 @@
 }
 .stars {
   position: absolute;
-  top: 300px;
-  display: none;
+  top: 150px;
 }
 .section {
   position: relative;
+  padding: 23px 31px 109px 31px;
 }
 .formBox {
   width: 298px;
@@ -79,6 +82,140 @@
   flex-direction: column;
   gap: 40px;
 }
-.section {
-  overflow: hidden;
+
+.but {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 10px 20px;
+  width: 150px;
+  height: 44px;
+  background: #235691;
+  margin: auto;
+  color: #d9d9d9;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 24px 0 143px 0;
+  }
+  .chakra {
+    margin: auto;
+    width: 543px;
+    height: 543px;
+  }
+  .title {
+    font-weight: 600px;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 47px;
+  }
+
+  .firstText {
+    width: 647px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+  }
+  .secondText {
+    width: 647px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 32px;
+  }
+  .stars {
+    top: 582px;
+  }
+
+  .formBox {
+    width: 647px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .chakraText {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+  }
+  .underChakraText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    text-align: center;
+  }
+
+  .input {
+    border-radius: 8px;
+    padding: 16px;
+    width: 647px;
+    height: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    padding: 24px 156px 69px 177px;
+  }
+  .chakra {
+  }
+  .title {
+    margin-bottom: 56px;
+  }
+
+  .firstText {
+    width: 1115px;
+  }
+  .secondText {
+    margin-bottom: 14px;
+    width: 1115px;
+  }
+  .stars {
+    display: none;
+  }
+
+  .formBox {
+    position: relative;
+    width: auto;
+    flex-direction: row-reverse;
+    gap: 0;
+    justify-content: space-between;
+    width: 1128px;
+    align-items: flex-start;
+  }
+  .chakraText {
+    text-align: left;
+  }
+  .underChakraText {
+    text-align: left;
+  }
+
+  .input {
+    padding: 16px;
+    width: 448px;
+    height: 56px;
+  }
+  .cloud {
+    display: block;
+    position: absolute;
+    left: calc(50% - 900px);
+    bottom: -200px;
+    transform: rotate(19deg);
+    width: 763px;
+    height: 508px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .labelBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .but {
+    margin: 0;
+    position: relative;
+    z-index: 20;
+  }
 }
