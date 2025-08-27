@@ -98,7 +98,7 @@
     margin: 49px auto 0 auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .box {
     width: 390px;
     height: 202px;
