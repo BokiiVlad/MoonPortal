@@ -18,10 +18,12 @@
 .headerBox {
   display: flex;
   justify-content: space-between;
-
   margin-top: 60px;
   padding: 41px 27px 21px 27px;
   line-height: 187%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
   font-weight: 700;

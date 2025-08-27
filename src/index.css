@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Newsreader", "Poiret One", sans-serif;
   font-size: 16px;
