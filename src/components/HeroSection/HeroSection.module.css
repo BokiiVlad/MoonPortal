@@ -5,7 +5,7 @@
 }
 .title {
   margin-bottom: 32px;
-  width: 333px;
+  min-width: 333px;
   position: relative;
   z-index: 10;
   margin-left: auto;
@@ -17,7 +17,7 @@
 }
 
 .text {
-  width: 333px;
+  min-width: 333px;
   position: relative;
   z-index: 20;
   margin: auto;

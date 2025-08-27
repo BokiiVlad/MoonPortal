@@ -12,6 +12,12 @@
   border-radius: 8px;
   padding: 20px 16px 16px 16px;
 }
+.cloud {
+  display: none;
+}
+.stars {
+  display: none;
+}
 .svg {
   fill: #fff;
 }
@@ -54,4 +60,98 @@
   width: 360px;
   height: 240px;
   margin: 41px auto 0 auto;
+}
+@media (min-width: 768px) {
+  .box {
+    gap: 32px;
+    width: 398px;
+    height: 202px;
+    min-width: 320px;
+    max-width: 398px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .mainText {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .cardList {
+    gap: 16px;
+  }
+  .but {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .moon {
+    width: 751px;
+    height: 501px;
+    margin: 49px auto 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .box {
+    width: 390px;
+    height: 202px;
+    min-width: 320px;
+    max-width: 398px;
+  }
+  .list {
+    flex-direction: row;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 85px;
+  }
+
+  .but {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 549px;
+  }
+  .moon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 442px;
+    width: 1159px;
+    height: 773px;
+    z-index: 20;
+  }
+  .section {
+    position: relative;
+  }
+
+  .cloud {
+    position: absolute;
+    left: calc(50% + 350px);
+    top: 150px;
+    transform: rotate(-32deg);
+    width: 763px;
+    height: 508px;
+    object-fit: cover;
+    z-index: 1;
+    display: block;
+  }
+
+  .stars {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 885px;
+    height: 885px;
+    z-index: 6;
+    display: block;
+  }
 }

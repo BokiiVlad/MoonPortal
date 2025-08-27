@@ -3,7 +3,9 @@ import Button from "../Button/Button.jsx";
 
 const Services = () => {
   return (
-    <>
+    <section className={style.section}>
+      <img className={style.stars} src="/pictures/Stars.png" />
+      <img className={style.cloud} src="/pictures/Cloud.png" />
       <h2 className={style.title}>My Services</h2>
 
       <ul className={style.list}>
@@ -64,7 +66,7 @@ const Services = () => {
       </ul>
       <Button className={style.but} children={"Book Now"} />
       <img className={style.moon} src="/pictures/MoonStages.png" />
-    </>
+    </section>
   );
 };
 
