@@ -30,6 +30,7 @@
 .stars {
   position: absolute;
   top: 300px;
+  display: none;
 }
 .section {
   position: relative;

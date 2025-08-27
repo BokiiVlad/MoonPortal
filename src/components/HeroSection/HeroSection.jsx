@@ -5,7 +5,7 @@ import Button from "../Button/Button.jsx";
 const HeroSection = () => {
   return (
     <div className={style.heroBox}>
-      <img className={style.moonLight} src="/public/pictures/MoonLight.png" />
+      <img className={style.moonLight} src="/pictures/MoonLight.png" />
       <img className={style.stars} src="/pictures/Stars.png" />
       <img className={style.cloudBottom} src="/pictures/Cloud.png" />
       <img className={style.cloudTop} src="/pictures/Cloud.png" />
