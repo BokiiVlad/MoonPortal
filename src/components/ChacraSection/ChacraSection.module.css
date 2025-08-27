@@ -182,9 +182,9 @@
     width: auto;
     flex-direction: row-reverse;
     gap: 0;
-    justify-content: space-between;
     width: 1128px;
     align-items: flex-start;
+    justify-content: center;
   }
   .chakraText {
     text-align: left;
