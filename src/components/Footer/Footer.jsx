@@ -31,7 +31,11 @@ const Footer = () => {
         </li>
       </ul>
 
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <a
+        href="https://www.instagram.com/_moonportal/?igsh=MXNyaDJ4bjY1NXlkbA%3D%3D#"
+        target="_blank"
+        aria-label="Instagram"
+      >
         <svg className={style.svg} width="24" height="24">
           <use href="/sprite/sprite.svg#icon-IG-Icon"></use>
         </svg>
