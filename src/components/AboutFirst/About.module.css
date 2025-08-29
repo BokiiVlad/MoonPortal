@@ -1,0 +1,191 @@
+.titleFirst {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 29px;
+  text-align: center;
+}
+.text {
+  text-align: left;
+  margin: auto;
+  width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  margin-bottom: 90px;
+  margin-top: 28px;
+}
+.cloud {
+  display: none;
+}
+.firstText {
+  line-height: 187%;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.firstImg {
+  width: 360px;
+  height: 499px;
+  margin-bottom: 41px;
+}
+
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 360px;
+  overflow: hidden;
+  margin-bottom: 41px;
+  margin: auto;
+}
+.section {
+  line-height: 222%;
+  text-align: center;
+  position: relative;
+  width: 360px;
+  margin: auto;
+}
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.list {
+  margin-bottom: 32px;
+  text-align: left;
+  list-style: none;
+}
+
+.list li::before {
+  content: "• ";
+  color: #d9d9d9;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.img {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 39px;
+}
+.textBox {
+  width: 300px;
+  margin: auto;
+}
+.secondText {
+  text-align: left;
+}
+.aboutQuinnBox {
+}
+.quinnPhoto {
+  display: none;
+}
+.secondText {
+  margin-bottom: 37px;
+}
+@media (min-width: 768px) {
+  .title {
+    margin-top: 0;
+  }
+  .quinnPhoto {
+    display: block;
+  }
+  .aboutBox {
+    width: 768px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstImg {
+    display: none;
+  }
+  .section {
+    width: auto;
+    flex-direction: row;
+  }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 222%;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    width: 768px;
+    margin: auto;
+  }
+  .text {
+    margin: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    width: auto;
+  }
+  .titleFirst {
+    text-align: left;
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    margin-top: 0;
+  }
+  .aboutQuinnBox {
+    margin-right: 60px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  .firstText {
+    margin-left: 0;
+    width: 325px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 0;
+  }
+  .quinnPhoto {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    text-align: left;
+  }
+  .questionBox {
+    max-width: 282px;
+    margin-left: 60px;
+  }
+  .img {
+    width: 425px;
+    height: 450px;
+    max-width: none;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .textBox {
+    position: relative;
+    padding: 24px 60px;
+    width: auto;
+    text-align: left;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .cloud {
+    display: block;
+    width: 763px;
+    height: 508px;
+    position: absolute;
+    left: calc(50% - 105px);
+    top: 10px;
+    transform: rotate(-32deg);
+    object-fit: cover;
+    z-index: 1;
+  }
+}
