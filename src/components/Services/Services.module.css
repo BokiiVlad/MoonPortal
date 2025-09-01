@@ -6,7 +6,7 @@
   border-radius: 8px;
   padding: 20px 16px 16px;
   width: 301px;
-  height: 200px;
+  height: 205px;
   min-width: 300px;
   max-width: 398px;
   border-radius: 8px;
@@ -66,7 +66,7 @@
   .box {
     gap: 32px;
     width: 398px;
-    height: 202px;
+    height: 222px;
     min-width: 320px;
     max-width: 398px;
   }
@@ -102,7 +102,7 @@
 @media (min-width: 1440px) {
   .box {
     width: 390px;
-    height: 202px;
+    height: 222px;
     min-width: 320px;
     max-width: 398px;
   }

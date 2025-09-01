@@ -51,6 +51,7 @@ textarea {
   background: none;
   outline: none;
   cursor: pointer;
+  color: #fff;
 }
 
 /* Cursor for buttons */

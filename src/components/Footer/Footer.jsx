@@ -43,7 +43,7 @@ const Footer = () => {
 
       <p className={style.brend}>© 2025 MoonPortal. All rights reserved.</p>
       <p className={style.siteDevelopers}>
-        Designed &amp; Developed by
+        Designed &amp; Developed by{" "}
         <a
           href="https://www.linkedin.com/in/olena-bakonina-888149145/"
           className={style.name}
