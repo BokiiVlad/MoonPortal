@@ -7,7 +7,14 @@ const HeroSection = () => {
     <div className={style.heroBox}>
       <img
         className={style.moonLight}
-        src="/pictures/MoonLight.png"
+        srcSet="
+    /pictures/MoonLight.png 480w,
+    /pictures/MoonLightTablet.png 768w,
+    /pictures/MoonLightDesktop.png 1440w
+  "
+        sizes="(max-width: 767px) 100vw,
+         (max-width: 1439px) 50vw,
+         352px"
         alt="Soft moonlight glow"
       />
       <img
@@ -30,7 +37,15 @@ const HeroSection = () => {
         <img
           className={style.moon}
           src="/pictures/MoonOptimized.png"
-          alt="Full moon"
+          srcSet="
+    /pictures/MoonOptimized.png 480w,
+    /pictures/MoonTabletOptimized.png 768w,
+    /pictures/MoonDesktopOptimized.png 1440w
+  "
+          sizes="(max-width: 767px) 100vw,
+         (max-width: 1439px) 50vw,
+         352px"
+          alt="Moon"
         />
       </div>
       <h1 className={style.title}>Embrace your natural magic</h1>

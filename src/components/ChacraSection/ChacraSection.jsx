@@ -20,7 +20,11 @@ const ChacraSection = () => {
       <div className={style.formBox}>
         <img
           className={style.chakra}
-          src="/pictures/PhotoChakra.png"
+          srcSet="
+    /pictures/PhotoChakra.png 480w,
+    /pictures/PhotoChakraTablet.png 768w,
+    /pictures/PhotoChakraDesktop.png 1440w
+  "
           alt="Chakra illustration"
         />
         <div>

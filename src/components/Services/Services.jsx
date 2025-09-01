@@ -75,7 +75,11 @@ const Services = () => {
       <Button className={style.but} children={"Book Now"} />
       <img
         className={style.moon}
-        src="/pictures/MoonStages.png"
+        srcSet="
+    /pictures/MoonStages.png 480w,
+    /pictures/MoonStagesTablet.png 768w,
+    /pictures/MoonStagesDesktop.png 1440w
+  "
         alt="Moon phases illustration"
       />
     </section>

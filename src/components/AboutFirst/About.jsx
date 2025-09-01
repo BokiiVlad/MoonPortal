@@ -39,6 +39,14 @@ const About = () => {
         className={style.moon}
         ref={moonRef}
         src="/pictures/MoonOptimized.png"
+        srcSet="
+    /pictures/MoonOptimized.png 480w,
+    /pictures/MoonTabletOptimized.png 768w,
+    /pictures/MoonDesktopOptimized.png 1440w
+  "
+        sizes="(max-width: 767px) 100vw,
+         (max-width: 1439px) 50vw,
+         352px"
         alt="Moon"
       />
 
@@ -59,7 +67,11 @@ const About = () => {
           </div>
           <img
             className={style.quinnPhoto}
-            src="/pictures/QuinnPhotoTablet.png"
+            srcSet="
+    /pictures/QuinnPhotoMobile.png 480w,
+    /pictures/QuinnPhotoTablet.png 768w,
+    /pictures/QuinnPhotoDesktop.png 1440w
+  "
             alt="Quinn portrait"
           />
           <img
@@ -85,7 +97,11 @@ const About = () => {
           </div>
           <img
             className={style.img}
-            src="/pictures/QuinnPhoto2.png"
+            srcSet="
+    /pictures/QuinnPhoto2.png 480w,
+    /pictures/QuinnPhoto2Tablet.png 768w,
+    /pictures/QuinnPhoto2Desktop.png 1440w
+  "
             alt="Quinn spiritual session"
           />
           <div className={style.textBox}>
