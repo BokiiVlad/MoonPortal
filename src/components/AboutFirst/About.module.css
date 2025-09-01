@@ -39,7 +39,7 @@
   margin-bottom: 41px;
   margin: auto;
 }
-.section {
+.wrapper {
   line-height: 222%;
   text-align: center;
   position: relative;
@@ -89,6 +89,12 @@
 .secondText {
   margin-bottom: 37px;
 }
+.moon {
+  display: none;
+}
+.gradient {
+  display: none;
+}
 @media (min-width: 768px) {
   .title {
     margin-top: 0;
@@ -108,8 +114,9 @@
   .section {
     width: auto;
     flex-direction: row;
+    position: relative;
   }
-  .section {
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     line-height: 222%;
@@ -125,6 +132,7 @@
     font-size: 18px;
     line-height: 167%;
     width: auto;
+    color: #fff;
   }
   .titleFirst {
     text-align: left;
@@ -145,6 +153,7 @@
     font-size: 18px;
     line-height: 167%;
     margin-bottom: 0;
+    color: #fff;
   }
   .quinnPhoto {
     margin-top: 55px;
@@ -187,5 +196,113 @@
     transform: rotate(-32deg);
     object-fit: cover;
     z-index: 1;
+  }
+
+  .moon {
+    display: block;
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 352px;
+    height: 352px;
+    z-index: 10;
+    opacity: 0.8;
+    transition: transform 0.8s ease-out;
+  }
+
+  .contentWrapper {
+    position: relative;
+    z-index: 10;
+  }
+  .gradient {
+    display: block;
+    position: relative;
+    top: 0;
+    left: -1px;
+    width: 425px;
+    height: 627px;
+    background: rgba(138, 124, 94, 0.2);
+    z-index: 5;
+  }
+}
+@media (min-width: 1440px) {
+  .moon {
+    width: 588px;
+    height: 588px;
+  }
+  .quinnPhoto {
+    width: 553px;
+    height: 833px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .titleFirst {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .firstText {
+  }
+  .aboutBox {
+    width: 1440px;
+    gap: 107px;
+  }
+  .aboutQuinnBox {
+    width: 695px;
+    height: 756px;
+  }
+  .gradient {
+    width: 780px;
+    height: 838px;
+  }
+
+  .firstText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    margin-right: 0;
+    width: auto;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+  }
+  .questionBox {
+    position: absolute;
+    top: -500px;
+    left: 302px;
+    max-width: none;
+    width: 695px;
+    z-index: 10;
+  }
+  .wrapper {
+    flex-direction: row-reverse;
+    width: 1440px;
+  }
+  .textBox {
+    width: 658px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 77px 60px;
+  }
+  .img {
+    width: 781px;
+    height: 826px;
+  }
+  .cloud {
+    transform: rotate(19deg);
+    width: 763px;
+    height: 508px;
+    left: calc(50% - 580px);
+    top: 480px;
+  }
+  .section {
+    margin-bottom: 120px;
   }
 }

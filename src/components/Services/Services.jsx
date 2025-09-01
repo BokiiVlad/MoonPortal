@@ -4,8 +4,16 @@ import Button from "../Button/Button.jsx";
 const Services = () => {
   return (
     <section className={style.section}>
-      <img className={style.stars} src="/pictures/Stars.png" />
-      <img className={style.cloud} src="/pictures/Cloud.png" />
+      <img
+        className={style.stars}
+        src="/pictures/Stars.png"
+        alt="Starry night sky"
+      />
+      <img
+        className={style.cloud}
+        src="/pictures/Cloud.png"
+        alt="Decorative cloud"
+      />
       <h2 className={style.title}>My Services</h2>
 
       <ul className={style.list}>
@@ -65,7 +73,11 @@ const Services = () => {
         </li>
       </ul>
       <Button className={style.but} children={"Book Now"} />
-      <img className={style.moon} src="/pictures/MoonStages.png" />
+      <img
+        className={style.moon}
+        src="/pictures/MoonStages.png"
+        alt="Moon phases illustration"
+      />
     </section>
   );
 };

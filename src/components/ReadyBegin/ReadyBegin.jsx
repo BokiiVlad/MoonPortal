@@ -4,9 +4,21 @@ import Button from "../Button/Button.jsx";
 const ReadyBegin = () => {
   return (
     <section className={style.box}>
-      <img className={style.stars} src="/pictures/Stars.png" />
-      <img className={style.cloudTop} src="/pictures/Cloud.png" />
-      <img className={style.cloudBottom} src="/pictures/Cloud.png" />
+      <img
+        className={style.stars}
+        src="/pictures/Stars.png"
+        alt="Starry night sky"
+      />
+      <img
+        className={style.cloudTop}
+        src="/pictures/Cloud.png"
+        alt="Cloud at the top"
+      />
+      <img
+        className={style.cloudBottom}
+        src="/pictures/Cloud.png"
+        alt="Cloud at the bottom"
+      />
       <h2 className={style.title}>Ready to Begin Your Lunar Journey?</h2>
 
       <p className={style.text}>
@@ -17,4 +29,5 @@ const ReadyBegin = () => {
     </section>
   );
 };
+
 export default ReadyBegin;

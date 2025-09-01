@@ -60,6 +60,7 @@
     line-height: 200%;
   }
   .but {
+    position: relative;
     display: block;
     margin: 0;
     border-radius: 12px;
@@ -73,6 +74,7 @@
     font-size: 16px;
     line-height: 150%;
     text-align: center;
+    z-index: 20;
   }
   .nav {
     display: flex;

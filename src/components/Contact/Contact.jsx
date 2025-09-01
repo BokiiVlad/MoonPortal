@@ -65,12 +65,16 @@ const Contact = () => {
           )}
         </Formik>
         <p className={style.textContact}>Additional Contact Methods</p>
-        <p class={style.titleAddress}>
+        <p className={style.titleAddress}>
           Email:{" "}
           <a href="mailto:contact@moonportal.com">Moonportalq@gmail.com </a>
         </p>
       </div>
-      <img className={style.img} src="/pictures/photoStudia.png" />
+      <img
+        className={style.img}
+        src="/pictures/photoStudia.png"
+        alt="Photo of MoonPortal studio interior"
+      />
     </section>
   );
 };

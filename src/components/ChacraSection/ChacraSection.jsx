@@ -3,8 +3,8 @@ import style from "./ChacraSection.module.css";
 const ChacraSection = () => {
   return (
     <section className={style.section}>
-      <img className={style.cloud} src="/pictures/Cloud.png" />
-      <img className={style.stars} src="/pictures/Stars.png" />
+      <img className={style.cloud} src="/pictures/Cloud.png" alt="cloud" />
+      <img className={style.stars} src="/pictures/Stars.png" alt="stars" />
       <h3 className={style.title}>The Chakra Portals</h3>
       <p className={style.firstText}>
         Your body has 7 main energetic centers that each hold a unique imprint.
@@ -18,7 +18,11 @@ const ChacraSection = () => {
       </p>
 
       <div className={style.formBox}>
-        <img className={style.chakra} src="/pictures/PhotoChakra.png" />
+        <img
+          className={style.chakra}
+          src="/pictures/PhotoChakra.png"
+          alt="Chakra illustration"
+        />
         <div>
           <p className={style.chakraText}>Get the Free MoonPortal Guidebooks</p>
           <p className={style.underChakraText}>

@@ -5,13 +5,33 @@ import Button from "../Button/Button.jsx";
 const HeroSection = () => {
   return (
     <div className={style.heroBox}>
-      <img className={style.moonLight} src="/pictures/MoonLight.png" />
-      <img className={style.stars} src="/pictures/Stars.png" />
-      <img className={style.cloudBottom} src="/pictures/Cloud.png" />
-      <img className={style.cloudTop} src="/pictures/Cloud.png" />
+      <img
+        className={style.moonLight}
+        src="/pictures/MoonLight.png"
+        alt="Soft moonlight glow"
+      />
+      <img
+        className={style.stars}
+        src="/pictures/Stars.png"
+        alt="Starry night sky"
+      />
+      <img
+        className={style.cloudBottom}
+        src="/pictures/Cloud.png"
+        alt="Cloud at the bottom"
+      />
+      <img
+        className={style.cloudTop}
+        src="/pictures/Cloud.png"
+        alt="Cloud at the top"
+      />
       <Header />
       <div className={style.moonWrapper}>
-        <img className={style.moon} src="/pictures/MoonOptimized.png" />
+        <img
+          className={style.moon}
+          src="/pictures/MoonOptimized.png"
+          alt="Full moon"
+        />
       </div>
       <h1 className={style.title}>Embrace your natural magic</h1>
       <p className={style.text}>
