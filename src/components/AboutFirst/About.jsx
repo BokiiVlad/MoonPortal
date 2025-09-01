@@ -38,7 +38,7 @@ const About = () => {
       <img
         className={style.moon}
         ref={moonRef}
-        src="/public/pictures/MoonOptimized.png"
+        src="/pictures/MoonOptimized.png"
         alt="Moon"
       />
 
