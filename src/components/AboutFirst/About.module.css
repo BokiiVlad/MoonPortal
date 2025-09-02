@@ -101,6 +101,8 @@
   }
   .quinnPhoto {
     display: block;
+    width: 343px;
+    height: 517px;
   }
   .aboutBox {
     width: 768px;
