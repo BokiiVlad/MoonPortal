@@ -12,11 +12,21 @@ const ReadyBegin = () => {
       <img
         className={style.cloudTop}
         src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
+  "
         alt="Cloud at the top"
       />
       <img
         className={style.cloudBottom}
         src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
+  "
         alt="Cloud at the bottom"
       />
       <h2 className={style.title}>Ready to Begin Your Lunar Journey?</h2>

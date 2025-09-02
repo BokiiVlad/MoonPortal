@@ -12,6 +12,11 @@ const Services = () => {
       <img
         className={style.cloud}
         src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
+  "
         alt="Decorative cloud"
       />
       <h2 className={style.title}>My Services</h2>
@@ -75,6 +80,7 @@ const Services = () => {
       <Button className={style.but} children={"Book Now"} />
       <img
         className={style.moon}
+        src="/pictures/MoonStages.png"
         srcSet="
     /pictures/MoonStages.png 480w,
     /pictures/MoonStagesTablet.png 768w,

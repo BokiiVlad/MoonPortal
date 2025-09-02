@@ -7,14 +7,12 @@ const HeroSection = () => {
     <div className={style.heroBox}>
       <img
         className={style.moonLight}
+        src="/pictures/MoonLight.png"
         srcSet="
     /pictures/MoonLight.png 480w,
     /pictures/MoonLightTablet.png 768w,
     /pictures/MoonLightDesktop.png 1440w
   "
-        sizes="(max-width: 767px) 100vw,
-         (max-width: 1439px) 50vw,
-         352px"
         alt="Soft moonlight glow"
       />
       <img
@@ -25,11 +23,21 @@ const HeroSection = () => {
       <img
         className={style.cloudBottom}
         src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png 480w,
+    /pictures/CloudDesktop.png 768w,
+    /pictures/CloudDesktop.png 1440w
+  "
         alt="Cloud at the bottom"
       />
       <img
         className={style.cloudTop}
         src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudDesktop.png 768w,
+    /pictures/CloudDesktop.png 1440w
+  "
         alt="Cloud at the top"
       />
       <Header />
@@ -42,9 +50,6 @@ const HeroSection = () => {
     /pictures/MoonTabletOptimized.png 768w,
     /pictures/MoonDesktopOptimized.png 1440w
   "
-          sizes="(max-width: 767px) 100vw,
-         (max-width: 1439px) 50vw,
-         352px"
           alt="Moon"
         />
       </div>

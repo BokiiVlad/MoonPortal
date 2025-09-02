@@ -3,7 +3,16 @@ import style from "./ChacraSection.module.css";
 const ChacraSection = () => {
   return (
     <section className={style.section}>
-      <img className={style.cloud} src="/pictures/Cloud.png" alt="cloud" />
+      <img
+        className={style.cloud}
+        src="/pictures/Cloud.png"
+        srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
+  "
+        alt="cloud"
+      />
       <img className={style.stars} src="/pictures/Stars.png" alt="stars" />
       <h3 className={style.title}>The Chakra Portals</h3>
       <p className={style.firstText}>
@@ -20,6 +29,7 @@ const ChacraSection = () => {
       <div className={style.formBox}>
         <img
           className={style.chakra}
+          src="/pictures/PhotoChakra.png"
           srcSet="
     /pictures/PhotoChakra.png 480w,
     /pictures/PhotoChakraTablet.png 768w,

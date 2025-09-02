@@ -44,9 +44,6 @@ const About = () => {
     /pictures/MoonTabletOptimized.png 768w,
     /pictures/MoonDesktopOptimized.png 1440w
   "
-        sizes="(max-width: 767px) 100vw,
-         (max-width: 1439px) 50vw,
-         352px"
         alt="Moon"
       />
 
@@ -108,6 +105,11 @@ const About = () => {
             <img
               className={style.cloud}
               src="/pictures/Cloud.png"
+              srcSet="
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
+  "
               alt="cloud"
             />
             <h2 className={style.title}>You are the Portal</h2>
