@@ -160,8 +160,7 @@
   .section {
     padding: 24px 156px 69px 177px;
   }
-  .chakra {
-  }
+
   .title {
     margin-bottom: 56px;
   }
@@ -208,6 +207,7 @@
     height: 508px;
     object-fit: cover;
     z-index: 1;
+    opacity: 0.8;
   }
   .labelBox {
     flex-direction: column;

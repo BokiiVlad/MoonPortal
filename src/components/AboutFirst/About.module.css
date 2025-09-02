@@ -198,6 +198,7 @@
     transform: rotate(-32deg);
     object-fit: cover;
     z-index: 1;
+    opacity: 0.8;
   }
 
   .moon {

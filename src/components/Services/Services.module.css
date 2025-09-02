@@ -143,6 +143,7 @@
     object-fit: cover;
     z-index: 1;
     display: block;
+    opacity: 0.8;
   }
 
   .stars {

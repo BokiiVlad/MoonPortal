@@ -52,6 +52,7 @@
   object-fit: cover;
   z-index: 2;
   pointer-events: none;
+  opacity: 0.8;
 }
 .cloudBottom {
   position: absolute;
@@ -62,6 +63,7 @@
   height: 493px;
   object-fit: cover;
   z-index: 1;
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
   .box {
