@@ -1,9 +1,9 @@
 import { Formik, Form, Field } from "formik";
 import style from "./Contact.module.css";
 
-const Contact = () => {
+const Contact = ({ sectionContactRef }) => {
   return (
-    <section className={style.box}>
+    <section className={style.box} ref={sectionContactRef}>
       <div>
         <h2 className={style.title}>Contact Us</h2>
         <p className={style.text}>

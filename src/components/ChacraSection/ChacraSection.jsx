@@ -1,8 +1,8 @@
 import style from "./ChacraSection.module.css";
 
-const ChacraSection = () => {
+const ChacraSection = ({ sectionBookingRef }) => {
   return (
-    <section className={style.section}>
+    <section className={style.section} ref={sectionBookingRef}>
       <img
         className={style.cloud}
         src="/pictures/Cloud.png"

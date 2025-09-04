@@ -1,19 +1,18 @@
 import { useEffect, useRef } from "react";
 import style from "./About.module.css";
 
-const About = () => {
-  const sectionRef = useRef(null);
+const About = ({ sectionAboutRef }) => {
   const moonRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current || !moonRef.current) return;
+      if (!sectionAboutRef.current || !moonRef.current) return;
 
-      const sectionRect = sectionRef.current.getBoundingClientRect();
+      const sectionRect = sectionAboutRef.current.getBoundingClientRect();
       const sectionTop = sectionRect.top + window.scrollY;
       const scrollY = window.scrollY;
 
       const moonHeight = moonRef.current.offsetHeight;
-      const sectionHeight = sectionRef.current.offsetHeight;
+      const sectionHeight = sectionAboutRef.current.offsetHeight;
 
       const stopOffset = window.innerWidth >= 768 ? 218 : 112;
 
@@ -34,7 +33,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className={style.section} ref={sectionRef}>
+    <section className={style.section} ref={sectionAboutRef}>
       <img
         className={style.moon}
         ref={moonRef}
@@ -97,7 +96,7 @@ const About = () => {
             srcSet="
     /pictures/QuinnPhoto2.png 480w,
     /pictures/QuinnPhoto2Tablet.png 768w,
-    /pictures/QuinnPhoto2Desktop.png 1440w
+    /pictures/QuinnPhoto2Tablet.png 1440w
   "
             alt="Quinn spiritual session"
           />

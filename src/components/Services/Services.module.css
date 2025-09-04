@@ -52,6 +52,14 @@
   text-align: center;
   margin-top: 49px;
   text-decoration: none;
+  position: relative;
+  z-index: 20;
+}
+.but:hover {
+  background: #4e90dc;
+}
+.but:active {
+  background: #0f56a8;
 }
 .moon {
   width: 100%;

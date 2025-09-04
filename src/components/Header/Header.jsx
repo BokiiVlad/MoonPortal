@@ -2,7 +2,26 @@ import { Link } from "react-router-dom";
 import style from "./Header.module.css";
 import Button from "../Button/Button.jsx";
 
-const Header = () => {
+const Header = ({
+  sectionAboutRef,
+  sectionServicesRef,
+  sectionBookingRef,
+  sectionContactRef,
+}) => {
+  const scrollToAbout = () => {
+    sectionAboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToServices = () => {
+    sectionServicesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToBooking = () => {
+    sectionBookingRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToContact = () => {
+    sectionContactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className={style.headerBox}>
       <div className={style.svgBox}>
@@ -14,16 +33,24 @@ const Header = () => {
       <nav className={style.nav}>
         <ul className={style.list}>
           <li>
-            <Link className={style.itemList}>About</Link>
+            <Link onClick={scrollToAbout} className={style.itemList}>
+              About
+            </Link>
           </li>
           <li>
-            <Link className={style.itemList}>Servise</Link>
+            <Link onClick={scrollToServices} className={style.itemList}>
+              Servise
+            </Link>
           </li>
           <li>
-            <Link className={style.itemList}>Contact</Link>
+            <Link onClick={scrollToContact} className={style.itemList}>
+              Contact
+            </Link>
           </li>
         </ul>
-        <button className={style.but}>Book Now</button>
+        <button className={style.but} onClick={scrollToBooking}>
+          Book Now
+        </button>
       </nav>
     </section>
   );

@@ -99,6 +99,12 @@
   color: #d9d9d9;
   margin-top: 20px;
 }
+.but:hover {
+  background: #4e90dc;
+}
+.but:active {
+  background: #0f56a8;
+}
 @media (min-width: 768px) {
   .section {
     padding: 24px 0 143px 0;

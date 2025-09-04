@@ -65,6 +65,12 @@
   z-index: 1;
   opacity: 0.8;
 }
+.but:hover {
+  background: #4e90dc;
+}
+.but:active {
+  background: #0f56a8;
+}
 @media (min-width: 768px) {
   .box {
     position: relative;

@@ -1,9 +1,13 @@
 import style from "./Services.module.css";
 import Button from "../Button/Button.jsx";
 
-const Services = () => {
+const Services = ({ sectionServicesRef, sectionBookingRef }) => {
+  const scrollToBooking = () => {
+    sectionBookingRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className={style.section}>
+    <section className={style.section} ref={sectionServicesRef}>
       <img
         className={style.stars}
         src="/pictures/Stars.png"
@@ -77,7 +81,11 @@ const Services = () => {
           </ul>
         </li>
       </ul>
-      <Button className={style.but} children={"Book Now"} />
+      <Button
+        onClick={scrollToBooking}
+        className={style.but}
+        children={"Book Now"}
+      />
       <img
         className={style.moon}
         src="/pictures/MoonStages.png"

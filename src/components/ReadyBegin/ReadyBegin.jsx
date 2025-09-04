@@ -1,7 +1,11 @@
 import style from "./ReadyBegin.module.css";
 import Button from "../Button/Button.jsx";
 
-const ReadyBegin = () => {
+const ReadyBegin = ({ sectionBookingRef }) => {
+  const scrollToBooking = () => {
+    sectionBookingRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className={style.box}>
       <img
@@ -35,7 +39,11 @@ const ReadyBegin = () => {
         Join us for an upcoming ceremony or workshop and discover the magic of
         the moon.
       </p>
-      <Button className={style.but} children={"Book Now"} />
+      <Button
+        onClick={scrollToBooking}
+        className={style.but}
+        children={"Book Now"}
+      />
     </section>
   );
 };

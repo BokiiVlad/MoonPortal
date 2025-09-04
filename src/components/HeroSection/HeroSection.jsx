@@ -2,7 +2,16 @@ import Header from "../Header/Header.jsx";
 import style from "./HeroSection.module.css";
 import Button from "../Button/Button.jsx";
 
-const HeroSection = () => {
+const HeroSection = ({
+  sectionAboutRef,
+  sectionServicesRef,
+  sectionBookingRef,
+  sectionContactRef,
+}) => {
+  const scrollToBooking = () => {
+    sectionBookingRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className={style.heroBox}>
       <img
@@ -24,9 +33,9 @@ const HeroSection = () => {
         className={style.cloudBottom}
         src="/pictures/Cloud.png"
         srcSet="
-    /pictures/Cloud.png 480w,
-    /pictures/CloudDesktop.png 768w,
-    /pictures/CloudDesktop.png 1440w
+    /pictures/Cloud.png.png 480w,
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
   "
         alt="Cloud at the bottom"
       />
@@ -35,12 +44,17 @@ const HeroSection = () => {
         src="/pictures/Cloud.png"
         srcSet="
     /pictures/Cloud.png.png 480w,
-    /pictures/CloudDesktop.png 768w,
-    /pictures/CloudDesktop.png 1440w
+    /pictures/CloudTablet.png 768w,
+    /pictures/CloudTablet.png 1440w
   "
         alt="Cloud at the top"
       />
-      <Header />
+      <Header
+        sectionAboutRef={sectionAboutRef}
+        sectionServicesRef={sectionServicesRef}
+        sectionBookingRef={sectionBookingRef}
+        sectionContactRef={sectionContactRef}
+      />
       <div className={style.moonWrapper}>
         <img
           className={style.moon}
@@ -58,7 +72,11 @@ const HeroSection = () => {
         Discover the transformational power of MoonPortal ceremonies and
         workshops
       </p>
-      <Button className={style.but} children={"Book Now"} />
+      <Button
+        onClick={scrollToBooking}
+        className={style.but}
+        children={"Book Now"}
+      />
     </div>
   );
 };

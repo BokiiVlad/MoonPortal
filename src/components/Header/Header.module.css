@@ -41,6 +41,10 @@
   text-decoration: none;
   z-index: 20;
 }
+.itemList:hover {
+  color: #9cabba;
+}
+
 @media (min-width: 768px) {
   .list {
     gap: 27px;
@@ -75,6 +79,12 @@
     line-height: 150%;
     text-align: center;
     z-index: 20;
+  }
+  .but:hover {
+    background: #4e90dc;
+  }
+  .but:active {
+    background: #0f56a8;
   }
   .nav {
     display: flex;
