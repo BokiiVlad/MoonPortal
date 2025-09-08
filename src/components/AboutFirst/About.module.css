@@ -35,7 +35,6 @@
   flex-direction: column;
   position: relative;
   width: 360px;
-  overflow: hidden;
   margin-bottom: 41px;
   margin: auto;
 }
@@ -92,9 +91,7 @@
 .moon {
   display: none;
 }
-.gradient {
-  display: none;
-}
+
 @media (min-width: 768px) {
   .title {
     margin-top: 0;
@@ -146,7 +143,7 @@
   .aboutQuinnBox {
     margin-right: 60px;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 119px;
   }
   .firstText {
     margin-left: 0;
@@ -254,6 +251,7 @@
   .aboutQuinnBox {
     width: 695px;
     height: 756px;
+    margin-top: 41px;
   }
   .gradient {
     width: 780px;
@@ -307,5 +305,8 @@
   }
   .section {
     margin-bottom: 120px;
+  }
+  .secondText {
+    width: 350px;
   }
 }

@@ -128,8 +128,8 @@ const About = ({ sectionAboutRef }) => {
               <li>feel free and inspired;</li>
             </ul>
             <p className={style.secondText}>
-              All in harmony with the moon's energetic signature
-              <br /> and significant celestial transits.
+              All in harmony with the moon's energetic signature and significant
+              celestial transits.
             </p>
           </div>
         </div>
