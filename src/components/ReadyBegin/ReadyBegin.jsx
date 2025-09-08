@@ -17,7 +17,7 @@ const ReadyBegin = ({ sectionBookingRef }) => {
         className={style.cloudTop}
         src="/pictures/Cloud.png"
         srcSet="
-    /pictures/Cloud.png.png 480w,
+    /pictures/Cloud.png 480w,
     /pictures/CloudTablet.png 768w,
     /pictures/CloudTablet.png 1440w
   "
@@ -27,7 +27,7 @@ const ReadyBegin = ({ sectionBookingRef }) => {
         className={style.cloudBottom}
         src="/pictures/Cloud.png"
         srcSet="
-    /pictures/Cloud.png.png 480w,
+    /pictures/Cloud.png 480w,
     /pictures/CloudTablet.png 768w,
     /pictures/CloudTablet.png 1440w
   "
