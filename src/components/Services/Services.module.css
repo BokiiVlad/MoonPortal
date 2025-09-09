@@ -157,11 +157,14 @@
   .stars {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 325px;
     transform: translateX(-50%);
     width: 885px;
     height: 885px;
     z-index: 6;
     display: block;
+  }
+  .box:hover {
+    border-color: #235691;
   }
 }

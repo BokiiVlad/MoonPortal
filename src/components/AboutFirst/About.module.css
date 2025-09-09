@@ -180,6 +180,7 @@
     padding: 24px 60px;
     width: auto;
     text-align: left;
+    z-index: 200;
   }
   .subtitle {
     font-weight: 400;
@@ -207,7 +208,7 @@
     width: 352px;
     height: 352px;
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.3;
     transition: transform 0.8s ease-out;
   }
 
