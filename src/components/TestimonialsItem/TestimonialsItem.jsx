@@ -1,16 +1,11 @@
 import style from "./TestimonialsItem.module.css";
 
-const TestimonialsItem = ({
-  name,
-  quote,
-  rating,
-  link = "https://www.instagram.com/",
-}) => {
+const TestimonialsItem = ({ name, quote, rating, socials }) => {
   return (
     <ul className={style.list}>
       <li className={style.quote}>{quote}</li>
       <li className={style.name}>
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={socials} target="_blank" rel="noopener noreferrer">
           {name}
         </a>
       </li>
