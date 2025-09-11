@@ -11,7 +11,6 @@ const Header = ({
   const scrollToAbout = () => {
     sectionAboutRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToServices = () => {
     sectionServicesRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -33,19 +32,40 @@ const Header = ({
       <nav className={style.nav}>
         <ul className={style.list}>
           <li>
-            <Link onClick={scrollToAbout} className={style.itemList}>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToAbout();
+              }}
+              className={style.itemList}
+            >
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={scrollToServices} className={style.itemList}>
-              Servise
-            </Link>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToServices();
+              }}
+              className={style.itemList}
+            >
+              Service
+            </a>
           </li>
           <li>
-            <Link onClick={scrollToContact} className={style.itemList}>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToContact();
+              }}
+              className={style.itemList}
+            >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
         <button className={style.but} onClick={scrollToBooking}>

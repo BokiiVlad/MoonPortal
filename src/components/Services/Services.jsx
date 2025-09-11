@@ -29,7 +29,7 @@ const Services = ({ sectionServicesRef, sectionBookingRef }) => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="20" height="20">
+              <svg className={style.svg} width="24" height="24">
                 <use href="/sprite/sprite.svg#icon-Moon-Icon"></use>
               </svg>
             </li>
@@ -47,7 +47,7 @@ const Services = ({ sectionServicesRef, sectionBookingRef }) => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="20" height="20">
+              <svg className={style.svgStar} width="23" height="23">
                 <use href="/sprite/sprite.svg#icon-Star-Icon"></use>
               </svg>
             </li>
@@ -65,7 +65,7 @@ const Services = ({ sectionServicesRef, sectionBookingRef }) => {
         <li className={style.box}>
           <ul className={style.cardList}>
             <li>
-              <svg className={style.svg} width="20" height="20">
+              <svg className={style.svg} width="24" height="24">
                 <use href="/sprite/sprite.svg#icon-Sun-Icon"></use>
               </svg>
             </li>

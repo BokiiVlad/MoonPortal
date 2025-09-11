@@ -7,13 +7,14 @@ const HeroSection = ({
   sectionServicesRef,
   sectionBookingRef,
   sectionContactRef,
+  sectionHeroRef,
 }) => {
   const scrollToBooking = () => {
     sectionBookingRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className={style.heroBox}>
+    <section ref={sectionHeroRef} className={style.heroBox}>
       <img
         className={style.moonLight}
         src="/pictures/MoonLight.png"
@@ -77,7 +78,7 @@ const HeroSection = ({
         className={style.but}
         children={"Book Now"}
       />
-    </div>
+    </section>
   );
 };
 

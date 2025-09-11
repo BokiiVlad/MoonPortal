@@ -13,9 +13,11 @@ const Home = () => {
   const sectionAboutRef = useRef(null);
   const sectionBookingRef = useRef(null);
   const sectionContactRef = useRef(null);
+  const sectionHeroRef = useRef(null);
   return (
     <>
       <HeroSection
+        sectionHeroRef={sectionHeroRef}
         sectionAboutRef={sectionAboutRef}
         sectionServicesRef={sectionServicesRef}
         sectionBookingRef={sectionBookingRef}
@@ -30,7 +32,12 @@ const Home = () => {
       <Testimonials />
       <ReadyBegin sectionBookingRef={sectionBookingRef} />
       <Contact sectionContactRef={sectionContactRef} />
-      <Footer />
+      <Footer
+        sectionAboutRef={sectionAboutRef}
+        sectionServicesRef={sectionServicesRef}
+        sectionHeroRef={sectionHeroRef}
+        sectionContactRef={sectionContactRef}
+      />
     </>
   );
 };

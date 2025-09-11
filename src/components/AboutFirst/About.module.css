@@ -309,5 +309,7 @@
   }
   .secondText {
     width: 350px;
+    position: relative;
+    z-index: 100;
   }
 }

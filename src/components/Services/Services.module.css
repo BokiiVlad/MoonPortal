@@ -20,6 +20,12 @@
 }
 .svg {
   fill: #fff;
+  display: block;
+}
+.svgStar {
+  stroke: white;
+  fill: none;
+  stroke-width: 3;
 }
 .title {
   text-align: center;

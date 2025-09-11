@@ -1,33 +1,75 @@
 import { Link } from "react-router-dom";
 import style from "./Footer.module.css";
 
-const Footer = () => {
-  const handleClick = (e) => {
-    e.preventDefault();
+const Footer = ({
+  sectionAboutRef,
+  sectionServicesRef,
+  sectionHeroRef,
+  sectionContactRef,
+}) => {
+  const scrollToAbout = () => {
+    sectionAboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToServices = () => {
+    sectionServicesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToHome = () => {
+    sectionHeroRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToContact = () => {
+    sectionContactRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <footer className={style.footerBox}>
       <ul className={style.list}>
         <li className={style.item}>
-          <Link to="#target-section" onClick={handleClick}>
+          <a
+            className={style.link}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToHome();
+            }}
+          >
             Home
-          </Link>
+          </a>
         </li>
         <li className={style.item}>
-          <Link to="#target-section" onClick={handleClick}>
+          <a
+            className={style.link}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToAbout();
+            }}
+          >
             About
-          </Link>
+          </a>
         </li>
         <li className={style.item}>
-          <Link to="#target-section" onClick={handleClick}>
-            Sevices
-          </Link>
+          <a
+            className={style.link}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToServices();
+            }}
+          >
+            Services
+          </a>
         </li>
         <li className={style.item}>
-          <Link to="#target-section" onClick={handleClick}>
+          <a
+            className={style.link}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToContact();
+            }}
+          >
             Contact
-          </Link>
+          </a>
         </li>
       </ul>
 
