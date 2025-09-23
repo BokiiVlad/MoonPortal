@@ -1,7 +1,44 @@
 import { Formik, Form, Field } from "formik";
+import axios from "axios";
 import style from "./Contact.module.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = ({ sectionContactRef }) => {
+  const sendForm = async (values) => {
+    const { name, email, message } = values;
+    try {
+      await axios.post("https://moonportalbackend.onrender.com/api/contact", {
+        name,
+        email,
+        message,
+      });
+      toast.success(
+        `${name} your message has been sent! Our team will contact you shortly.`,
+        {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        }
+      );
+    } catch (error) {
+      toast.error("Something went wrong! Please try again later.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      console.log(error);
+    }
+  };
   return (
     <section className={style.box} ref={sectionContactRef}>
       <div>
@@ -13,8 +50,9 @@ const Contact = ({ sectionContactRef }) => {
 
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
-          onSubmit={(values) => {
-            console.log("Form values:", values);
+          onSubmit={(values, { resetForm }) => {
+            sendForm(values);
+            resetForm();
           }}
         >
           {() => (
