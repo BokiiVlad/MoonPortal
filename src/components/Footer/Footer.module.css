@@ -59,10 +59,7 @@
     flex-direction: row;
     gap: 146px;
   }
-  .item {
-  }
-  .item:hover {
-  }
+ 
   .socialLink {
     display: flex;
     gap: 16px;

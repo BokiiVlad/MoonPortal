@@ -7,7 +7,7 @@ const ChacraSection = ({ sectionBookingRef }) => {
     evt.preventDefault();
     const form = evt.currentTarget;
     try {
-      await axios.post("http://localhost:3000/api/contact", {
+      await axios.post("https://moonportalbackend.onrender.com/bookings", {
         name: form.elements.name.value,
         email: form.elements.email.value,
       });
