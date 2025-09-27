@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import About from "../../components/AboutFirst/About.jsx";
 import ChacraSection from "../../components/ChacraSection/ChacraSection.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
@@ -14,6 +14,7 @@ const Home = () => {
   const sectionBookingRef = useRef(null);
   const sectionContactRef = useRef(null);
   const sectionHeroRef = useRef(null);
+
   return (
     <>
       <HeroSection

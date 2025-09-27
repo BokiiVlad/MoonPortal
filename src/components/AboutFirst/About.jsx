@@ -105,7 +105,7 @@ const About = ({ sectionAboutRef }) => {
               className={style.cloud}
               src="/pictures/Cloud.png"
               srcSet="
-    /pictures/Cloud.png.png 480w,
+    /pictures/Cloud.png 480w,
     /pictures/CloudTablet.png 768w,
     /pictures/CloudTablet.png 1440w
   "

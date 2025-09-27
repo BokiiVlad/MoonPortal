@@ -1,46 +1,33 @@
 import { Formik, Form, Field } from "formik";
 import axios from "axios";
 import style from "./Contact.module.css";
-import { ToastContainer, toast } from "react-toastify";
+import ContactModal from "../ContactModal/ContactModal.jsx";
+import { useState } from "react";
 
 const Contact = ({ sectionContactRef }) => {
+  const [isModal, setIsModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setIsModal(false);
+  };
+
   const sendForm = async (values) => {
     const { name, email, message } = values;
     try {
+      setIsModal(true);
       await axios.post("https://moonportalbackend.onrender.com/api/contact", {
         name,
         email,
         message,
       });
-      toast.success(
-        `${name} your message has been sent! Our team will contact you shortly.`,
-        {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        }
-      );
     } catch (error) {
-      toast.error("Something went wrong! Please try again later.", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
       console.log(error);
     }
   };
+
   return (
     <section className={style.box} ref={sectionContactRef}>
+      <ContactModal isOpen={isModal} onCloseModal={handleCloseModal} />
       <div>
         <h2 className={style.title}>Contact Us</h2>
         <p className={style.text}>
