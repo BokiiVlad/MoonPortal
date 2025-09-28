@@ -13,14 +13,12 @@ const Contact = ({ sectionContactRef }) => {
   };
 
   const sendForm = async (values) => {
-    const { name, email, message } = values;
     try {
       setIsModal(true);
-      await axios.post("https://moonportalbackend.onrender.com/api/contact", {
-        name,
-        email,
-        message,
-      });
+      await axios.post(
+        "https://moonportalbackend.onrender.com/api/contact",
+        values
+      );
     } catch (error) {
       console.log(error);
     }
@@ -47,14 +45,14 @@ const Contact = ({ sectionContactRef }) => {
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
           validationSchema={validationSchema}
-          validateOnChange={false}
-          validateOnBlur={false}
+          validateOnChange={true} // помилки з’являються одразу після введення
+          validateOnBlur={true} // помилки з’являються при втраті фокусу
           onSubmit={(values, { resetForm }) => {
             sendForm(values);
             resetForm();
           }}
         >
-          {({ isSubmitting, isValid }) => (
+          {({ isSubmitting }) => (
             <Form className={style.form}>
               <div className={style.formGroup}>
                 <label htmlFor="name" className={style.label}>
@@ -108,7 +106,7 @@ const Contact = ({ sectionContactRef }) => {
               <button
                 type="submit"
                 className={style.submitBtn}
-                disabled={isSubmitting || !isValid}
+                disabled={isSubmitting}
               >
                 Submit
               </button>
@@ -119,7 +117,7 @@ const Contact = ({ sectionContactRef }) => {
         <p className={style.textContact}>Additional Contact Methods</p>
         <p className={style.titleAddress}>
           Email:{" "}
-          <a href="mailto:contact@moonportal.com">Moonportalq@gmail.com </a>
+          <a href="mailto:contact@moonportal.com">Moonportalq@gmail.com</a>
         </p>
       </div>
       <img
