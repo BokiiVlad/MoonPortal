@@ -17,11 +17,12 @@ const ChacraSection = ({ sectionBookingRef }) => {
         progress: undefined,
         theme: "light",
       });
-      form.reset();
+
       await axios.post("https://moonportalbackend.onrender.com/api/bookings", {
         name: form.elements.name.value,
         email: form.elements.email.value,
       });
+      form.reset();
     } catch (error) {
       toast.error("Something went wrong! Please try again later.", {
         position: "top-center",
