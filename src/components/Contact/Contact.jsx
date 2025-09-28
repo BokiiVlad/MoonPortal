@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup"; // ✅ додаємо yup
+import * as Yup from "yup";
 import axios from "axios";
 import style from "./Contact.module.css";
 import ContactModal from "../ContactModal/ContactModal.jsx";
