@@ -115,9 +115,7 @@
   stroke-linejoin: round;
   fill: none;
 }
-/* .closeSvg:hover {
-  stroke: #235691;
-} */
+
 .but {
   position: absolute;
   top: 25px;
@@ -131,8 +129,6 @@
   background: transparent;
 }
 
-.but:hover {
-}
 @media (min-width: 768px) {
   .title {
     font-size: 32px;

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import About from "../../components/AboutFirst/About.jsx";
 import ChacraSection from "../../components/ChacraSection/ChacraSection.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
