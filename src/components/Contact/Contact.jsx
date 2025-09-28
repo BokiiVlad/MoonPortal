@@ -47,6 +47,8 @@ const Contact = ({ sectionContactRef }) => {
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
           validationSchema={validationSchema}
+          validateOnChange={false}
+          validateOnBlur={false}
           onSubmit={(values, { resetForm }) => {
             sendForm(values);
             resetForm();

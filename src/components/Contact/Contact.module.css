@@ -60,7 +60,9 @@
 .textContact {
   display: none;
 }
-
+.error {
+  color: #235691;
+}
 @media (min-width: 768px) {
   .box {
     padding: 0 60px 0 60px;
