@@ -7,10 +7,6 @@ const ChacraSection = ({ sectionBookingRef }) => {
     evt.preventDefault();
     const form = evt.currentTarget;
     try {
-      await axios.post("https://moonportalbackend.onrender.com/api/bookings", {
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-      });
       toast.success("You’re subscribed! You’ll receive your guidebooks soon.", {
         position: "top-center",
         autoClose: 5000,
@@ -22,6 +18,10 @@ const ChacraSection = ({ sectionBookingRef }) => {
         theme: "light",
       });
       form.reset();
+      await axios.post("https://moonportalbackend.onrender.com/api/bookings", {
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+      });
     } catch (error) {
       toast.error("Something went wrong! Please try again later.", {
         position: "top-center",

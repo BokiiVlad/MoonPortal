@@ -1,4 +1,5 @@
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup"; // ✅ додаємо yup
 import axios from "axios";
 import style from "./Contact.module.css";
 import ContactModal from "../ContactModal/ContactModal.jsx";
@@ -25,6 +26,14 @@ const Contact = ({ sectionContactRef }) => {
     }
   };
 
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string()
+      .email("Invalid email format")
+      .required("Email is required"),
+    message: Yup.string(),
+  });
+
   return (
     <section className={style.box} ref={sectionContactRef}>
       <ContactModal isOpen={isModal} onCloseModal={handleCloseModal} />
@@ -37,12 +46,13 @@ const Contact = ({ sectionContactRef }) => {
 
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
+          validationSchema={validationSchema}
           onSubmit={(values, { resetForm }) => {
             sendForm(values);
             resetForm();
           }}
         >
-          {() => (
+          {({ isSubmitting, isValid }) => (
             <Form className={style.form}>
               <div className={style.formGroup}>
                 <label htmlFor="name" className={style.label}>
@@ -54,6 +64,11 @@ const Contact = ({ sectionContactRef }) => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
+                />
+                <ErrorMessage
+                  name="name"
+                  component="div"
+                  className={style.error}
                 />
               </div>
 
@@ -67,6 +82,11 @@ const Contact = ({ sectionContactRef }) => {
                   type="email"
                   name="email"
                   placeholder="Your Email"
+                />
+                <ErrorMessage
+                  name="email"
+                  component="div"
+                  className={style.error}
                 />
               </div>
 
@@ -83,12 +103,17 @@ const Contact = ({ sectionContactRef }) => {
                 />
               </div>
 
-              <button type="submit" className={style.submitBtn}>
+              <button
+                type="submit"
+                className={style.submitBtn}
+                disabled={isSubmitting || !isValid}
+              >
                 Submit
               </button>
             </Form>
           )}
         </Formik>
+
         <p className={style.textContact}>Additional Contact Methods</p>
         <p className={style.titleAddress}>
           Email:{" "}
