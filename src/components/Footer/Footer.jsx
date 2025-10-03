@@ -74,7 +74,7 @@ const Footer = ({
       </ul>
 
       <a
-        href="https://www.instagram.com/_moonportal/?igsh=MXNyaDJ4bjY1NXlkbA%3D%3D#"
+        href="https://www.instagram.com/moonportal.q?igsh=MXNyaDJ4bjY1NXlkbA%3D%3D"
         target="_blank"
         aria-label="Instagram"
       >
