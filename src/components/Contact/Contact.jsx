@@ -116,8 +116,7 @@ const Contact = ({ sectionContactRef }) => {
 
         <p className={style.textContact}>Additional Contact Methods</p>
         <p className={style.titleAddress}>
-          Email:{" "}
-          <a href="mailto:contact@moonportal.com">Moonportalq@gmail.com</a>
+          Email: <a href="mailto:quinn@moonportal.co">quinn@moonportal.co</a>
         </p>
       </div>
       <img
